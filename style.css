@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 245, 245);
+}
+
+nav {
+    padding: 10px;
+    background-color: turquoise;
+    color: saddlebrown;
+    border-radius: 0px 0px 20px 20px;
+}
+
+nav h1 {
+    font-family: 'Leckerli One', cursive;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 50px repeat(4, 1fr);
+    justify-items: center;
+    gap: 5px;
+    margin: 20px 0px;
+    font-size: 1.2rem;
+}
+
+.menu span {
+    cursor: pointer;
+}
+
+.menu span:hover {
+    text-decoration: underline;
+}
+
+.m1 {
+    grid-column-start: 2;
+}
+
+.menu a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+.active {
+    font-weight: bolder;
+}
+
+.quiz-header {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    min-height: 70vh;
+}
+
+form {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    text-align: center;
+    margin: 20px;
+    color: slateblue;
+}
+
+.instruction {
+    text-align: center;
+    margin: 20px 10px;
+    color: green;
+}
+
+header h4 span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.questions {
+    max-width: 1000px;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0px 20px;
+    line-height: 30px;
+}
+
+.que {
+    margin: 10px 0px;
+}
+
+.options {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 20px 0px 0px 3rem;
+}
+
+.op input,
+.op label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.declare {
+    display: flex;
+    margin: 20px;
+    border: 2px solid rgb(152, 145, 145);
+    padding: 10px;
+    min-width: 60%;
+    text-align: center;
+}
+
+.declare input {
+    cursor: pointer;
+    margin: 0px 10px;
+    width: 20px;
+}
+
+.btn-submit {
+    text-decoration: none;
+}
+
+.button {
+    margin: auto;
+    display: none;
+    font-size: 1.3rem;
+    background-color: gray;
+    color: saddlebrown;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: not-allowed;
+    outline: none;
+    transition: 0.2s all;
+}
+
+.button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#score {
+    margin: 20px 0px;
+    text-align: center;
+    color: green;
+}
+
+.op-score {
+    color: red;
+}
+
+.correct {
+    color: green;
+    font-weight: bolder;
+}
+
+.result-header {
+    display: none;
+}
+
+h2.solution-heading {
+    text-align: center;
+    color: rgba(124, 20, 140, 0.6);
+    text-decoration: underline;
+}
+
+
+/* Angle Component */
+
+.angle-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.angle-main h1 {
+    margin: 30px 0px;
+    color: steelblue;
+}
+
+.angle-main h3 {
+    margin: 16px;
+    color: cornflowerblue;
+}
+
+.angle-main input {
+    max-width: 400px;
+    height: 40px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.angle-main button {
+    margin: 30px 0px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: turquoise;
+    color: sienna;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.angle-main button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.errorOutput {
+    text-align: center;
+}
+
+.out-text {
+    color: rgb(179, 175, 175);
+    text-align: center;
+    margin: 0px 10px;
+}
+
+h4 {
+    margin: 20px 0px;
+    font-style: italic;
+    color: slategray;
+    text-align: center;
+}
+
+footer {
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 12px;
+    }
+}
