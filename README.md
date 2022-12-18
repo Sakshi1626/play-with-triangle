@@ -11,11 +11,10 @@ This app has 4 Section <br/>
 ## [LIVE](https://learn-triangle-sakshi-gupta.netlify.app)
 
 ---
-
-![Demo](/icons/angle-ss.png)
-![Demo](/icons/quiz-ss.png)
-![Demo](/icons/hypotenuse-ss.png)
-![Demo](/icons/area-ss-org.png)
+![angle of triangle](/icons/angle-ss.png)
+![hypotenuse](/icons/hypotenuse-ss.png)
+![area of triangle](/icons/area-ss.png)
+![quiz](/icons/quiz-ss.png)
 
 ---
 <br/>
